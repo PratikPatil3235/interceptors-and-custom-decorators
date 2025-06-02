@@ -1,6 +1,5 @@
-import { Controller, Post, Body, UseInterceptors, Req, Res, Get } from '@nestjs/common';
+import { Controller, Post, UseInterceptors, Get } from '@nestjs/common';
 import { AppInterceptor } from './app.interceptor';
-import { Request, Response } from 'express';
 import { User } from './user/user.decorator';
 import { User as UserType } from './user/user.interface';
 
