@@ -16,8 +16,10 @@ export class AppController {
 
 
   @Get('/profile')
-  getProfile(@User() user:UserType) {
-    return `Message: Hello ${user.name}
+  getProfile(@User() user: UserType) {
+    
+    return `Id: ${user.id}
+    Message: Hello ${user.name}
     Email: ${user.email}
     `
   }
